@@ -1,0 +1,60 @@
+Algorithm:
+
+Step 1 : Start
+
+Step 2 : Declare the function MainMenu()
+2.1 Take user input to switch between 3 options1. To_Open_Account
+2. Login
+3. Exit
+2.2 After receiving the input , the respective function is called related to 1st or 2nd options.
+2.3 If user selects the 3rd option all the processes will be termiated (using kill command) i.e.
+it will exit.
+2.4 But if the user presses key other than 1,2,3 then it displays “invalid choice” & calls the
+function MainMenu()
+
+Step 3 : Declare the function To_Open_Account()
+3.1 Take User Details as Input.
+3.2 Display Randomly generated “account no”. & “secret pin”.
+3.3 Also declare variable named “balance” and assign it value 1000.
+3.4 Display message as “Rs.1000 deposited as initial account opening balance”.
+3.5 Call function Login().
+
+Step 4 : Declare the function Login()
+if user enters correct account_no. and password
+then
+display “login successful” & call function Menu()
+Else
+display “Invalid Details” & call function MainMenu()
+
+Step 5 : Declare the function Menu()
+5.1 Take user input to switch between 4 options1. Balance Enquiry
+2. Deposits
+3. Withdrawls
+4. Main Menu.
+5.2 After receiving the input , the respective function is called related to any 1 of the above
+available options.
+5.3 But if the user presses key other than 1,2,3,4 then it displays “invalid choice” & calls the
+function MainMenu()
+
+Step 6 : Declare the function Balance_Enquiry()
+6.1 Display the availabe balance of user logged in.
+6.2 Again call the function Menu()
+
+Step 7 : Declare the function Deposits()
+7.1 Take user input for the amount that is to be deposited.
+7.2 Display “Transaction Successful” & Display updated available balance.
+7.3 Again call the function Menu()
+
+Step 8 : Declare the function Withdrawls()
+8.1 Take user input for the amount that is to be withdrawn.
+8.2 if amount is less than available balance,
+then
+display “Transaction successfu”l & Display updated available balance.
+call the function Menu()
+else
+display “enter lesser amount”.
+8.3 Again call the function Menu()
+
+Step 09 : Call the function MainMenu()
+
+Step 10 : Stop.
